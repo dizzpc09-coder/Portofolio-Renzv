@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RENZV 𐓏𐓏 | StealthGrade</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:#fff;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:900;
+letter-spacing:3px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+overflow:hidden;
+}
+
+.hero-video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.75);
+z-index:-1;
+}
+
+.hero-content{
+max-width:900px;
+padding:20px;
+animation:fadeUp 1.5s ease;
+}
+
+.tag{
+display:inline-block;
+padding:10px 20px;
+border:1px solid #333;
+border-radius:50px;
+margin-bottom:20px;
+}
+
+.glitch{
+font-size:90px;
+font-weight:900;
+letter-spacing:5px;
+position:relative;
+}
+
+.hero p{
+margin-top:20px;
+color:#bbb;
+line-height:1.8;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;
+}
+
+.btn-white{
+background:white;
+color:black;
+}
+
+.btn-dark{
+border:1px solid #444;
+color:white;
+}
+
+/* SECTION */
+
+section{
+padding:100px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:15px;
+}
+
+.subtitle{
+text-align:center;
+color:#999;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+border:1px solid #222;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:white;
+}
+
+.card p{
+color:#aaa;
+margin-top:10px;
+}
+
+/* STATS */
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:50px;
+}
+
+/* CONTACT */
+
+.social{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.social a{
+background:#111;
+border:1px solid #222;
+padding:25px;
+border-radius:20px;
+text-decoration:none;
+color:white;
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.social i{
+font-size:40px;
+}
+
+/* FLOAT */
+
+.discord{
+position:fixed;
+left:25px;
+bottom:25px;
+width:60px;
+height:60px;
+border-radius:50%;
+background:#5865F2;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:25px;
+text-decoration:none;
+}
+
+.whatsapp{
+position:fixed;
+right:25px;
+bottom:25px;
+width:60px;
+height:60px;
+border-radius:50%;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+color:black;
+font-size:25px;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+padding:30px;
+text-align:center;
+border-top:1px solid #222;
+color:#777;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+
+.glitch{
+font-size:50px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">RENZV</div>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<video autoplay muted loop playsinline class="hero-video">
+<source src="StealthGrade.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<div class="tag">
+PROFESSIONAL FREE FIRE SERVICES
+</div>
+
+<h1 class="glitch">
+RENZV
+</h1>
+
+<p>
+Jasa Gendong, Jasa Joki , dan layanan Free Fire profesional.
+</p>
+
+<div class="buttons">
+<a href="#contact" class="btn btn-white">ORDER NOW</a>
+<a href="#portfolio" class="btn btn-dark">PORTFOLIO</a>
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Services</h2>
+<p class="subtitle">Layanan yang tersedia</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Jasa Gendong</h3>
+<p>Layanan gendong profesional</p>
+</div>
+
+<div class="card">
+<h3>Jasa Joki</h3>
+<p>Layanan Joki Profesional</p>
+</div>
+
+<div class="card">
+<h3>Need Party</h3>
+<p>Siap layanan Need Party</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Statistics</h2>
+
+<div class="grid">
+
+<div class="card stat">
+<h2>250+</h2>
+<p>Orders</p>
+</div>
+
+<div class="card stat">
+<h2>250+</h2>
+<p>Customers</p>
+</div>
+
+<div class="card stat">
+<h2>95%</h2>
+<p>Satisfaction</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="title">Portfolio</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Push Saldo</h3>
+<p>Target tercapai dengan aman dan amanah.</p>
+</div>
+
+<div class="card">
+<h3>No Trol</h3>
+<p> Selalu di Gendong worker Profesional.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="reviews">
+
+<h2 class="title">Reviews</h2>
+
+<div class="grid">
+
+<div class="card">
+★★★★★
+<p>Pelayanan cepat dan ramah.</p>
+</div>
+
+<div class="card">
+★★★★★
+<p>Recommended untuk push saldo.</p>
+</div>
+
+<div class="card">
+★★★★★
+<p>Proses cepat dan terpercaya.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="social">
+
+<a href="Cooming Soon">
+<i class="fa-brands fa-discord"></i>
+<div>
+<h3>Discord</h3>
+<p>Cooming Soon</p>
+</div>
+</a>
+
+<a href="https://wa.me//6281322947755?text=bang+mau+order">
+<i class="fa-brands fa-whatsapp"></i>
+<div>
+<h3>WhatsApp</h3>
+<p>Order Sekarang</p>
+</div>
+</a>
+
+<a href="https://www.instagram.com/its.renzv">
+<i class="fa-brands fa-instagram"></i>
+<div>
+<h3>Instagram</h3>
+<p>@its.renzv</p>
+</div>
+</a>
+
+<a href="https://sociabuzz.com/renzvx/support">
+<i class="fa-solid fa-hand-holding-dollar"></i>
+<div>
+<h3>Sociabuzz</h3>
+<p>Support Renzv</p>
+</div>
+</a>
+
+<a href="https://www.tiktok.com/@its.renzv">
+<i class="fa-brands fa-tiktok"></i>
+<div>
+<h3>TikTok</h3>
+<p>@its.renzv</p>
+</div>
+        </a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 RENZV • All Rights Reserved
+</footer>
+
+<!-- <a href="-" class="discord">
+<i class="fa-brands fa-discord"></i>
+</a> -->
+
+<a href="https://wa.me//6281322947755?text=bang+mau+order" class="whatsapp">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+
+// Simple Fade Animation
+window.addEventListener("scroll",()=>{
+
+document.querySelectorAll(".card").forEach(card=>{
+
+const pos=card.getBoundingClientRect().top;
+
+if(pos < window.innerHeight-100){
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+}
+
+});
+
+});
+
+document.querySelectorAll(".card").forEach(card=>{
+card.style.opacity="0";
+card.style.transform="translateY(30px)";
+card.style.transition=".6s";
+});
+
+</script>
+
+</body>
+</html>
